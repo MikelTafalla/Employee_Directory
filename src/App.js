@@ -1,10 +1,13 @@
 import React from 'react';
-// import './App.css';
-import Header from "./components/Header/header"
+import Header from "./components/Header/header";
+import SearchBtn from "./components/Search/searchBtn";
 
 function App() {
   return (
-      <Header />    
+    <div>
+      <Header />
+      <SearchBtn /> 
+    </div>
   );
 }
 
