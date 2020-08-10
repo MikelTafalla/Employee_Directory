@@ -1,0 +1,6 @@
+th {
+    color: rgb(245, 135, 25) !important;
+}
+#clickable {
+    cursor: pointer
+}
