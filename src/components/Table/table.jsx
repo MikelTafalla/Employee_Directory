@@ -1,37 +1,32 @@
 import React from "react";
 import "./table.css";
+import API from "../../utils/API";
+import TableData from "./tableData";
 
+class Table extends React.Component {
+  state = {
+    users: []
+  };
 
-function Table() {
-  return (
-    <table className="table">
-      <thead className="thead-dark">
-        <tr>
-          <th scope="col">Photo</th>
-          <th scope="col">Name<span onClick="" id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
-          <th scope="col">Phone<span onClick="" id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
-          <th scope="col">Email<span onClick="" id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
-          <th scope="col">DOB<span onClick="" id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>XXX</td>
-        </tr>
-        <tr>
-          <td>1</td>
-          <td>Mark</td>
-          <td>Otto</td>
-          <td>@mdo</td>
-          <td>XXX</td>
-        </tr>
-      </tbody>
-    </table>
-  )
-}
+  componentDidMount() {
+    this.usersArr();
+  }
+
+  usersArr = () => {
+    API.getUsers()
+      .then(res => this.setState({ users: res.data.results }))
+      .catch(err => console.log(err));
+  }
+  
+
+  render() {
+    return (
+      <TableData 
+      users={this.state.users}
+      />
+    )
+  }//end render
+
+}//end component
 
 export default Table;
