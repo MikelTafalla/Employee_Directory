@@ -9,7 +9,7 @@ function TableData(props) {
             <th scope="col">Name<span id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
             <th scope="col">Phone<span id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
             <th scope="col">Email<span id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
-            <th scope="col">Counrty of Office<span id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
+            <th scope="col">Country of Office<span id="clickable"><i className="fa fa-fw fa-sort"></i></span></th>
           </tr>
         </thead>
         <tbody>

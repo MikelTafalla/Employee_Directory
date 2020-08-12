@@ -1,9 +1,6 @@
 .navbar {
     background-color:black;
 }
-.form-inline {
-    color: rgb(245, 135, 25);  
-}
 .navbar-collapse {
     margin: 0 auto;
     justify-content: center;

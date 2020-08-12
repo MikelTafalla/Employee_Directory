@@ -7,7 +7,7 @@ function App() {
   return (
     <div>
       <Header />
-      <SearchBtn /> 
+      {/* <SearchBtn />  */}
       <Table /> 
     </div>
   );

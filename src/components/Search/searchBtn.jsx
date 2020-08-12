@@ -1,13 +1,20 @@
 import React from "react";
 import "./searchBtn.css";
 
-function SearchBtn() {
+function SearchBtn(props) {
   return (
     <nav className="navbar navbar-collapse bg-dark">
-      <form className="form-inline">
-        <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"></input>
-          <button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
-      </form>
+
+        <input
+        onChange={props.handleChange}
+        className="form-control mr-sm-2"
+        type="text"
+        placeholder="Look Me Up"
+        aria-label="Search"
+        name="search"
+        value={props.search}
+        />
+        
     </nav>
   )
 }
