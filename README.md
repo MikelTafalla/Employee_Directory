@@ -15,14 +15,10 @@ Keep always up to date with your comapny employees. This Employee Directory give
 
 # Table of Contents
 
-* [Installation](#installation)
 * [Instructions](#instructions)
 * [Example Gif](#example-gif)
 * [Acknowledgment](#acknowledgment)
 * [Author](#author)
-
-## Installation
-> 1.npm install
 
 ## Instructions
 > Open your browser and go to [Employee_Directory](https://mikeltafalla.github.io/Employee_Directory/). All you employees will be listed. Using the search bar you could look for specific names and/or last names to faster find the information of the employee you are looking for. You could reorganize your employee's table by descending or ascending alphabetical order, phone number, email and country.
